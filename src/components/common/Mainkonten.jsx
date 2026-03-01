@@ -12,7 +12,7 @@ const Mainkonten = () => {
 
   // Fetch data from Konten2.json
   useEffect(() => {
-    fetch("/Data/Konten1.json")
+    fetch("/data/Konten1.json")
       .then((response) => response.json())
       .then((json) => setData1(json))
       .catch((error) => console.error("Error fetching Konten2:", error));
@@ -20,7 +20,7 @@ const Mainkonten = () => {
 
   // Fetch data from Konten3.json
   useEffect(() => {
-    fetch("/Data/Konten2.json")
+    fetch("/data/Konten2.json")
       .then((response) => response.json())
       .then((json) => setData2(json))
       .catch((error) => console.error("Error fetching Konten3:", error));
@@ -28,7 +28,7 @@ const Mainkonten = () => {
 
   // Fetch data from Konten4.json
   useEffect(() => {
-    fetch("/Data/Konten3.json")
+    fetch("/data/Konten3.json")
       .then((response) => response.json())
       .then((json) => setData3(json))
       .catch((error) => console.error("Error fetching Konten4:", error));

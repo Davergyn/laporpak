@@ -1,15 +1,15 @@
 import React from 'react'
-import Navbar from '../pages/Home/Navbar'
-import Mainkonten from '../pages/Home/Mainkonten'
+import Navbar from '../components/common/Navbar'
+import Mainkonten from '../components/common/Mainkonten'
 import Footer from '../components/Footer'
 
 
 const Home = () => {
   return (
     <>
-    <Navbar/>
-      <Mainkonten/>
-    <Footer/>
+      <Navbar />
+      <Mainkonten />
+      <Footer />
     </>
   )
 }

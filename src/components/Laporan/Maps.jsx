@@ -7,7 +7,7 @@ import {
   useMap,
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
-import locations from "../../../public/Data/data.json";
+import locations from "../../../public/data/data.json";
 
 export default function Maps({ wilayah, kecamatan, updateMap }) {
   const [center, setCenter] = useState([-7.797068, 110.370529]); // Default center (Yogyakarta)
@@ -37,7 +37,7 @@ export default function Maps({ wilayah, kecamatan, updateMap }) {
 
   return (
     <div className="w-full  h-max ">
-      <MapContainer center={center} zoom={zoom} style={{ width: "100%", height: "300px",zIndex: -1, position: "absolute" }}>
+      <MapContainer center={center} zoom={zoom} style={{ width: "100%", height: "300px", zIndex: -1, position: "absolute" }}>
         <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
         {kecamatan && (
           <Marker position={center}>

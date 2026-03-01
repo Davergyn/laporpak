@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import NewNavbar from "../components/NewNavbar";
-import Maps from "../components/Laporan/Maps";
-import ModalAdd from "../components/Laporan/ModalAdd";
-import CardLaporan from "../components/Laporan/CardLaporan";
+import LaporanNavbar from "../components/laporan/LaporanNavbar";
+import Maps from "../components/laporan/Maps";
+import ModalAdd from "../components/laporan/ModalAdd";
+import CardLaporan from "../components/laporan/CardLaporan";
 
 export default function NewLaporan() {
   const [wilayah, setWilayah] = useState("");
@@ -17,7 +17,7 @@ export default function NewLaporan() {
   return (
     <>
       <div className="flex flex-col">
-        <NewNavbar
+        <LaporanNavbar
           wilayah={wilayah}
           setWilayah={setWilayah}
           kecamatan={kecamatan}
